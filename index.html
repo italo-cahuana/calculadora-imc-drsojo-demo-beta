@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Indice de masa corporal</title>
+</head>
+<body class="p-2">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark my-2 rounded shadow sticky-top">
+        <div class="container-fluid">
+          <!-- Botón hamburguesa -->
+          <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Marca -->
+          <a class="navbar-brand fw-semibold me-lg-5" href="#">Dr. Sojo</a>
+      
+          <!-- Menú -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mx-lg-2 active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mx-lg-2" href="acerca.html">Acerca del Dr. Sojo</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link fw-semibold mx-lg-2" href="tips.html">Tips y Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mx-lg-2" href="tabla.html">Tabla IMC</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+    <h1 class="text-center mt-3 mb-4">Calcula tu Índice de Masa Corporal</h1>
+
+    <div class="container col-12 col-lg-10">
+        <div class="row justify-content-center rounded-5 pt-4 mb-3 mb-lg-4 shadow">
+          <div class="col-11 col-sm-10 col-md-8 col-lg-5">
+            <div class="card text-center rounded-5 border-0">
+              <img id="imagensojo" src="src/img/IMG-20250409-WA0028 (5).jpg" 
+                   class="rounded-circle mx-auto shadow">
+              <div class="card-body">
+                <h2 class="text-center nombre">Dr. Javier Sojo Vizcaíno</h2>
+                <p class="card-text mb-lg-2 descripcion">Medico egresado de la Universidad Metropolitana de Barranquilla
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="row justify-content-center my-2 my-lg-1">
+        <div class="col-11 col-sm-10 col-md-9 col-lg-9">
+            <form class="p-3 bg-light border rounded-5 shadow">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Introduce tu peso en KG</label>
+                    <input type="number" class="form-control" id="peso" step="any">
+                    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Introduce tu altura en Mts o Cm</label>
+                    <input type="number" class="form-control" id="altura" step="any">
+                </div>
+                <button type="button" id="calcular" class="btn btn-primary">Calcular</button>
+            </form>
+        </div>
+    </div>
+
+
+    <br/>
+    <div id="resultado" class="text-center"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <Script src="script.js"></Script>
+</body>
+</html>

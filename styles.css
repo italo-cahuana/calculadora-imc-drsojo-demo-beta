@@ -1,0 +1,73 @@
+body {
+    max-width: 99%;
+    width: 99%;
+    /* background-color: whitesmoke; */
+}
+
+/* /////////////////////////////////////// */
+/* Contenedor principal */
+.resultado-container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 35px;
+}
+
+/* Imagen */
+.resultado-imagen {
+    width: 600px;
+    max-width: 100%; /* Responsivo */
+    height: auto;
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    margin-bottom: 10px;
+}
+
+/* Textos */
+.resultado-texto {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.resultado-clasificacion {
+    font-weight: bold;
+    color: #2c3e50; /* Color oscuro */
+}
+
+.resultado-tips {
+    font-style: italic;
+    color: #7f8c8d; /* Color gris */
+}
+/* //////////////////////////////////////// */
+
+.descripcion {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nombre {
+    /* color: rgb(53, 92, 143); */
+    text-shadow: 100ch;
+    color:  #0d6efd;
+}
+#imagensojo {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+#resultado {
+    font-size: 20px;
+}
+@media (max-width: 420px) {
+    body {
+        max-width: 99%; /* Ocupa todo el ancho disponible */
+        width: 99%; /* Ocupa el 100% del ancho en móviles */
+    }
+    #imagensojo {
+        height: 154px;
+        width: 154px;
+    }
+    .resultado-imagen {
+        width: 400px;
+    }
+}
